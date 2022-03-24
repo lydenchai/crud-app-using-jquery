@@ -1,0 +1,107 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: sans-serif;
+  background: rgb(241, 236, 236);
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  margin: 50px auto;
+  margin-left: 2.5%;
+}
+
+.formInput {
+  width: 40%;
+}
+
+.form {
+  padding: 10px;
+  width: 60%;
+  border-radius: 5px;
+  margin-left: 15%;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.083);
+}
+
+h2 {
+  text-align: center;
+}
+
+input[type="text"] {
+  height: 3vh;
+  width: 150%;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  padding: 5px;
+  background: rgb(221, 221, 221);
+}
+
+button {
+  height: 3.5vh;
+  width: 60px;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-top: 15px;
+}
+
+#btnAdd {
+  background: rgb(31, 171, 247);
+}
+
+#btnAdd:hover {
+  background: rgb(22, 135, 196);
+}
+
+#btnUpdate {
+  background: rgb(24, 208, 76);
+}
+
+#btnUpdate:hover {
+  background: rgb(31, 247, 92);
+}
+
+#btnClear {
+  background: rgb(243, 59, 59);
+}
+
+#btnClear:hover {
+  background: rgb(197, 32, 32);
+}
+
+.datatable {
+  width: 50%;
+  margin-right: 10%;
+  border-radius: 5px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.083);
+}
+
+.datatable #tblCustomers {
+  width: 100%;
+}
+
+.datatable #tblCustomers thead {
+  height: 5vh;
+  background: rgb(88, 188, 255);
+}
+
+.datatable #tblCustomers thead th {
+  color: #fff;
+  font-size: 15px;
+}
+
+.datatable #tblCustomers tbody tr {
+  height: 20px;
+  font-size: 18px;
+}
+
+.edit,
+.delete {
+  cursor: pointer;
+}
