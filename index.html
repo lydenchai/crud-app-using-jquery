@@ -1,61 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>CRUD app using jquery</title>
-        <!DOCTYPE html>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-        <script type="text/javascript" src="js/app.js"></script>
-        <link rel="stylesheet" href="style/main.css" />
-    </head>
-    <body>
-        <div class="container">
-            <div class="formInput">
-                <div class="form">
-                    <h2>Form create</h2>
-                    <input type="hidden" id="hfRowIndex" value="" />
-                    <table class="table">
-                        <tr>
-                            <td>Id:</td>
-                            <td><input type="text" name="Id" id="txtId" value="1" /></td>
-                        </tr>
-                        <tr>
-                            <td>Name:</td>
-                            <td><input type="text" name="Name" id="txtName" value="" /></td>
-                        </tr>
-                        <tr>
-                            <td>Country:</td>
-                            <td>
-                                <input type="text" name="Country" id="txtCountry" value="" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <button type="button" id="btnAdd">Add</button>
-                                <button type="button" id="btnUpdate" style="display: none">
-                                Update
-                                </button>
-                            </td>
-                            <td><button type="button" id="btnClear">Clear</button></td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            <div class="datatable">
-                <table id="tblCustomers" class="table">
-                    <thead>
-                        <th>Id</th>
-                        <th>Name</th>
-                        <th>Country</th>
-                        <th>Edit</th>
-                        <th>Delete</th>
-                    </thead>
-                    <tbody style=" text-align: center; align-items: center; justify-content: center; height: 8vh;"></tbody>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD app using jquery</title>
+    <!DOCTYPE html>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <link rel="stylesheet" href="style/main.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="formInput">
+            <div class="form">
+                <h2>Form create</h2>
+                <input type="hidden" id="hfRowIndex" value="" />
+                <table class="table">
+                    <tr>
+                        <td>Id:</td>
+                        <td><input type="text" name="Id" id="txtId" value="1" /></td>
+                    </tr>
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" name="Name" id="txtName" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>Country:</td>
+                        <td>
+                            <input type="text" name="Country" id="txtCountry" value="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="button" id="btnAdd">Add</button>
+                            <button type="button" id="btnUpdate" style="display: none">Update</button>
+                        </td>
+                        <td><button type="button" id="btnClear">Cancel</button></td>
+                    </tr>
                 </table>
             </div>
         </div>
-    </body>
+        <div class="datatable">
+            <table id="tblCustomers" class="table">
+                <thead>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Country</th>
+                    <th colspan="2">Action</th>
+                </thead>
+                <tbody style=" text-align: center; align-items: center; justify-content: center; height: 8vh;">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
 </html>

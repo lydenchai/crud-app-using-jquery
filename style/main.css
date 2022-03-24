@@ -59,11 +59,11 @@ button {
 }
 
 #btnUpdate {
-  background: rgb(24, 208, 76);
+  background: rgb(34, 255, 108);
 }
 
 #btnUpdate:hover {
-  background: rgb(31, 247, 92);
+  background: rgb(24, 218, 79);
 }
 
 #btnClear {
@@ -104,4 +104,8 @@ button {
 .edit,
 .delete {
   cursor: pointer;
+}
+
+p {
+  display: none;
 }
